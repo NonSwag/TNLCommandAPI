@@ -46,7 +46,7 @@ public abstract class CommandManager {
         return registeredCommands;
     }
 
-    public boolean onCommand(@Nonnull String message, @Nonnull CommandSender<?> sender) {
+    public static boolean onCommand(@Nonnull String message, @Nonnull CommandSender<?> sender) {
         if (!message.isEmpty()) {
             if (message.charAt(0) == CommandManager.getCommandPrefix()) {
                 String[] split = message.replaceFirst(CommandManager.getCommandPrefix().toString(), "").split(" ");
