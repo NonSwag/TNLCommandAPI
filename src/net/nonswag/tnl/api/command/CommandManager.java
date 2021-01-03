@@ -10,10 +10,8 @@ import java.util.List;
 
 public abstract class CommandManager {
 
-    @Nonnull
-    private static final List<Command> registeredCommands = new ArrayList<>();
-    @Nonnull
-    private static Character commandPrefix = '/';
+    @Nonnull private static final List<Command> registeredCommands = new ArrayList<>();
+    @Nonnull private static Character commandPrefix = '/';
 
     @Nonnull
     public static Character getCommandPrefix() {
